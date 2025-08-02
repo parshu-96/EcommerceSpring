@@ -41,7 +41,6 @@ public class CategoryService implements ICategoryService {
                 .orElseThrow(() -> new Exception("Category not found with name: " + name));
 
         return CategoryMapper.toDto(category);
-
     }
 
     public AllProductsOfCategoryDTO getAllProductsOfCategory(Long categoryId) throws Exception {
